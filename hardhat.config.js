@@ -8,22 +8,28 @@ module.exports = {
     enabled: false,
   },
   networks: {
-    opencampus: {
-      url: `https://rpc.open-campus-codex.gelato.digital/`,
+    "pharos-devnet": {
+      url: `https://devnet.dplabs-internal.com`,
       accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+      chainId: 50002,
+      gasPrice: 1000000000,
+      gas: 8000000,
+      httpOptions: {
+        timeout: 60000,
+      },
     },
   },
   etherscan: {
     apiKey: {
-      opencampus: "your-etherscan-api-key",
+      "pharos-devnet": "empty",
     },
     customChains: [
       {
-        network: "opencampus",
-        chainId: 656476,
+        network: "pharos-devnet",
+        chainId: 50002,
         urls: {
-          apiURL: "https://edu-chain-testnet.blockscout.com/api",
-          browserURL: "https://edu-chain-testnet.blockscout.com",
+          apiURL: "https://pharosscan.xyz/api",
+          browserURL: "https://pharosscan.xyz",
         },
       },
     ],

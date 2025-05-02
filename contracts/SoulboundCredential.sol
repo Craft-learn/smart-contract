@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-contract CraftLearnCredential is ERC721URIStorage, AccessControl {
+contract SoulboundCredential is ERC721URIStorage, AccessControl {
     uint256 private _tokenIdCounter;
 
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");

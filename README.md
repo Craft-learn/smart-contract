@@ -12,6 +12,6 @@ npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
 
-CraftLearnCredential deployed to: 0x001325A87861acE20834126A48FAe6EF76A3F8e5
+SoulboundCredential deployed to: 0x52C57FFA43eCC539529EE7920B859122247219BA
 Successfully verified contract CraftLearnCredential on the block explorer.
-https://edu-chain-testnet.blockscout.com/address/0x001325A87861acE20834126A48FAe6EF76A3F8e5#code
+https://pharosscan.xyz/address/0x52C57FFA43eCC539529EE7920B859122247219BA#code

@@ -5,17 +5,20 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const CraftLearnCredential = await hre.ethers.getContractFactory(
-    "CraftLearnCredential"
+  const SoulboundCredential = await hre.ethers.getContractFactory(
+    "SoulboundCredential"
   );
 
   // Deploy contracts
-  const craftLearnCredential = await CraftLearnCredential.deploy();
-  await craftLearnCredential.waitForDeployment();
+  const soulboundCredential = await SoulboundCredential.deploy({
+    gasLimit: 8000000,
+    gasPrice: ethers.parseUnits("1", "gwei"),
+  });
+  await soulboundCredential.waitForDeployment();
 
   console.log(
-    "CraftLearnCredential deployed to:",
-    await craftLearnCredential.getAddress()
+    "SoulboundCredential deployed to:",
+    await soulboundCredential.getAddress()
   );
 }
 
