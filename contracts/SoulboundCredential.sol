@@ -44,7 +44,8 @@ contract SoulboundCredential is ERC721URIStorage, AccessControl {
             if (isStudent(addresses[i])) {
                 revert("Address is already a student");
             }
-            grantRole(STUDENT_ROLE, addresses[i]);
+            // we use _grantRole to avoid as grantRole would require admin check
+            _grantRole(STUDENT_ROLE, addresses[i]);
             emit StudentRegistered(addresses[i], msg.sender);
         }
     }

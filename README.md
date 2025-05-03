@@ -12,6 +12,6 @@ npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
 
-SoulboundCredential deployed to: 0x52C57FFA43eCC539529EE7920B859122247219BA
+SoulboundCredential deployed to: 0x43E641BfE5fcf28F4683140A66D61acbB2F1AA2B
 Successfully verified contract CraftLearnCredential on the block explorer.
-https://pharosscan.xyz/address/0x52C57FFA43eCC539529EE7920B859122247219BA#code
+https://pharosscan.xyz/address/0x43E641BfE5fcf28F4683140A66D61acbB2F1AA2B#code
